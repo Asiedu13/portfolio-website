@@ -15,7 +15,7 @@ const ProjectCard = ({name, desc, liveLink, codeLink, img, tags, key}) => {
           <Link href={codeLink}>
             <button>View code</button>
           </Link>
-          <div className="mt-[10px]">{tags ? tags.map((tag) => <span>#{tag}</span>) : " "}</div>
+          <div className="mt-[10px]">{tags ? tags.map((tag, index) => <span key={index}>#{tag}</span>) : " "}</div>
         </div>
       </div>
     </div>
