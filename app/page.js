@@ -9,7 +9,7 @@ const HomePage = () => {
       <HomeHeader />
       {/* Skills display */}
       <section className="flex">
-        <article className=" mx-[auto] bg-[#2d2d2d] w-[1100px] w-max-[1400px] h-[450px] absolute rounded-3xl relative bottom-[100px] border-4 flex">
+        <article className=" mx-[auto] bg-[#2d2d2d] w-[1100px] w-max-[1400px] h-[450px] absolute rounded-3xl relative bottom-[100px] border-gray-light border-4 flex">
           <div className="w-[80%] h-[inherit]">
             <header className="p-[2rem] pl-[12.5rem]">
               <h2 className="text-3xl text-white">Skills</h2>
