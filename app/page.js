@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/image";
 import HomeHeader from "./component/Header/Home";
 import ProjectCard from "./component/Card/ProjectCard";
 import ProfileCard from "./component/Card/ProfileCard";
+import ProjectsData from './data/projectsData.json'
+import YellowButton from "./component/Button/YellowButton";
 
 const HomePage = () => {
   return (
@@ -85,24 +85,13 @@ const HomePage = () => {
         </div>
 
         {/* Output */}
-        <section className="grid grid-rows-2 grid-flow-col gap-4 px-[100px] h-[600px] w-[1200px] border-cyan border-2 mx-auto">
-          <article className="w-[280px] h-[260px] border-2 border-cyan bg-header-background hover:border-4 hover:border-[#efb970] transition-all bg-contain ">
-            <h2>Project 1</h2>
-          </article>
-
-          <article className="w-[280px] h-[260px] border-2 border-cyan ">
-            <h2>Project 1</h2>
-          </article>
-
-          <article className="w-[280px] h-[260px] border-2 border-cyan ">
-            <h2>Project 1</h2>
-          </article>
-          <article className="w-[280px] h-[260px] border-2 border-cyan ">
-            <h2>Project 1</h2>
-          </article>
-          <article className="w-[280px] h-[260px] border-2 border-cyan ">
-            <h2>Project 1</h2>
-          </article>
+        <section className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1200px] mx-auto">
+          {ProjectsData.map((project) => (
+            <ProjectCard key={project.id}
+              name={project.name}
+              img={project.img} desc={project.desc} liveLink={project.liveLink} codeLink={project.codeLink} /> 
+          ) )}
+         
         </section>
       </section>
     </div>
