@@ -3,6 +3,7 @@ import ProjectCard from "./component/Card/ProjectCard";
 import ProfileCard from "./component/Card/ProfileCard";
 import ProjectsData from "./data/projectsData.json";
 import YellowButton from "./component/Button/YellowButton";
+import Footer from "./component/Footer";
 
 const HomePage = () => {
   return (
@@ -125,6 +126,8 @@ const HomePage = () => {
       <section className="h-[400px]">
 
       </section>
+
+      <Footer />
     </div>
   );
 };
