@@ -79,9 +79,9 @@ const HomePage = () => {
         </header>
         <div className=" p-[20px] flex justify-center">
           <button>ALL</button>&nbsp; / &nbsp;
-          <button>WEB DEVELOPMENT</button> &nbsp;/&nbsp;
-          <button>APPLICATION</button> &nbsp;/&nbsp;
-          <button>DEVELOPMENT</button>&nbsp;
+          <button>FRONTEND </button> &nbsp;/&nbsp;
+          <button>BACKEND </button> &nbsp;/&nbsp;
+          <button>FULLSTACK</button>&nbsp;
         </div>
 
         {/* Output */}
