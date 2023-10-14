@@ -82,10 +82,10 @@ const HomePage = () => {
 
       {/* Projects Section */}
       <section>
-        <header className="border-2 flex justify-center  ">
+        <header className="flex justify-center  ">
           <h2 className="text-5xl ">Projects</h2>
         </header>
-        <div className="border-2 p-[20px] flex justify-center">
+        <div className=" p-[20px] flex justify-center">
           <button>ALL</button>&nbsp; / &nbsp;
           <button>WEB DEVELOPMENT</button> &nbsp;/&nbsp;
           <button>APPLICATION</button> &nbsp;/&nbsp;
