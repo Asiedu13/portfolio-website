@@ -14,10 +14,10 @@ const HomeHeader = () => {
           </h1>
         </section>
         <section>
-          <p className="text-white w-[400px] font-normal ">
+          <p className="text-gray-light w-[400px] font-normal ">
             Want to bring your designs to life? Go ahead and
           </p>{" "}
-          <p className="text-white w-[400px] font-normal">
+          <p className="text-gray-light w-[400px] font-normal">
             {" "}
             contact me. Let's bring your projects to life.
           </p>
