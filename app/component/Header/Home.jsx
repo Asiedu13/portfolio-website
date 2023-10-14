@@ -18,8 +18,7 @@ const HomeHeader = () => {
             Want to bring your designs to life? Go ahead and
           </p>{" "}
           <p className="text-gray-light w-[400px] font-normal">
-            {" "}
-            contact me. Let's bring your projects to life.
+            {"contact me. Let's bring your projects to life. "}
           </p>
         </section>
         <section className="py-[20px]">
