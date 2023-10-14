@@ -121,6 +121,10 @@ const HomePage = () => {
           </button>
         </div>
       </section>
+      {/* Testimonials section */}
+      <section className="h-[400px]">
+
+      </section>
     </div>
   );
 };
