@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "img": "",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "FRONTEND"
+  },
+  {
+    "id": 2,
+    "img": "/media/imgs/glasses.jpg",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "FRONTEND"
+  },
+  {
+    "id": 3,
+    "img": "",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "FRONTEND"
+  }
+]
