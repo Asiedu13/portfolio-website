@@ -5,7 +5,7 @@ const ProjectCard = ({name, desc, liveLink, codeLink, img, tags}) => {
   return (
     <div className="wrapper">
       <div className="card">
-        <Image src={img} width={400} height={300} />
+        <Image src={img} width={400} height={300} alt={ name} />
         <div className="info">
           <h1>{name}</h1>
           <p>{desc}</p>
