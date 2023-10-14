@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-const ProjectCard = ({name, desc, liveLink, codeLink, img, tags}) => {
+const ProjectCard = ({name, desc, liveLink, codeLink, img, tags, key}) => {
   return (
-    <div className="wrapper">
+    <div className="wrapper" key={key}>
       <div className="card">
         <Image src={img} width={400} height={300} alt={ name} />
         <div className="info">
