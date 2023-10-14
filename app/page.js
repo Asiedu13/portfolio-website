@@ -1,7 +1,7 @@
 import HomeHeader from "./component/Header/Home";
 import ProjectCard from "./component/Card/ProjectCard";
 import ProfileCard from "./component/Card/ProfileCard";
-import ProjectsData from './data/projectsData.json'
+import ProjectsData from "./data/projectsData.json";
 import YellowButton from "./component/Button/YellowButton";
 
 const HomePage = () => {
@@ -85,13 +85,23 @@ const HomePage = () => {
         </div>
 
         {/* Output */}
-        <section className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1200px] mx-auto">
-          {ProjectsData.map((project) => (
-            <ProjectCard key={project.id}
-              name={project.name}
-              img={project.img} desc={project.desc} liveLink={project.liveLink} codeLink={project.codeLink} /> 
-          ) )}
-         
+        <section>
+          <div className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1200px] mx-auto">
+            {ProjectsData.map((project) => (
+              <ProjectCard
+                key={project.id}
+                name={project.name}
+                img={project.img}
+                desc={project.desc}
+                liveLink={project.liveLink}
+                codeLink={project.codeLink}
+                tags={project.tags}
+              />
+            ))}
+          </div>
+          <div className="flex justify-center">
+            <YellowButton content={"View More"} />
+          </div>
         </section>
       </section>
 

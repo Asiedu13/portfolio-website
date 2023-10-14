@@ -6,7 +6,8 @@
     "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
     "liveLink": "",
     "codeLink": "",
-    "type": "FRONTEND"
+    "type": "FRONTEND",
+    "tags": ["api", "webdev"]
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
     "liveLink": "",
     "codeLink": "",
-    "type": "FRONTEND"
+    "type": "FRONTEND",
+    "tags": ["api", "webdev"]
   },
   {
     "id": 3,
@@ -24,6 +26,37 @@
     "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
     "liveLink": "",
     "codeLink": "",
-    "type": "FRONTEND"
+    "type": "FRONTEND",
+    "tags": ["api", "webdev"]
+  },
+  {
+    "id": 4,
+    "img": "/media/imgs/glasses.jpg",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "FRONTEND",
+    "tags": ["api", "webdev"]
+  },
+  {
+    "id": 5,
+    "img": "/media/imgs/glasses.jpg",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "FRONTEND",
+    "tags": ["api", "webdev"]
+  },
+  {
+    "id": 5,
+    "img": "/media/imgs/glasses.jpg",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "FRONTEND",
+    "tags": ["api", "webdev"]
   }
 ]
