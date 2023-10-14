@@ -94,6 +94,23 @@ const HomePage = () => {
          
         </section>
       </section>
+
+      {/* Hire me banner */}
+      <section className="flex justify-between py-[1rem] px-[5rem] h-[200px] items-center bg-yellow mt-[100px] ">
+        <div>
+          <h3 className="text-2xl text-gray-dark mb-[25px]">
+            Want to work with me?
+          </h3>
+          <p className="font-normal text-gray-dark text-sm">
+            Always feel free to contact & hire me
+          </p>
+        </div>
+        <div className="pr-[100px]">
+          <button className="w-[220px] h-[80px] bg-gray-dark text-yellow rounded-md">
+            Hire me
+          </button>
+        </div>
+      </section>
     </div>
   );
 };
