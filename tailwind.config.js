@@ -5,6 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  images: {
+    remotePatterns: [
+      {
+        // protocol: "https",
+        protocol: "https",
+        port: "",
+        pathname: "https://images.unsplash.com/**",
+        hostname: "https://images.unsplash.com",
+      },
+    ],
+  },
   theme: {
     extend: {
       backgroundImage: {
