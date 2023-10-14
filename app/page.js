@@ -15,54 +15,55 @@ const HomePage = () => {
             <header className="p-[2rem] pl-[12.5rem]">
               <h2 className="text-3xl text-white">Skills</h2>
             </header>
-            <table className=" w-[90%] p-[10px] ml-[50px] text-white h-[70%]">
-              <tr className="p-[1rem]">
-                <td className="p-[.3rem]">Javascript</td>
-                <td className="p-[.3rem]">SASS</td>
-                <td className="p-[.3rem]">Slack</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">HTML</td>
-                <td className="p-[.3rem]">Django</td>
-                <td className="p-[.3rem]">Robotics</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">CSS</td>
-                <td className="p-[.3rem]">Strategic planning</td>
-                <td className="p-[.3rem]">Micropython</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">Python</td>
-                <td>Resource management</td>
-                <td>Chess</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">CSS</td>
-                <td>Strategic planning</td>
-                <td>Micropython</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">CSS</td>
-                <td>PHP</td>
-                <td>Micropython</td>
-              </tr>
-              <tr className="">
-                <td>Next.JS</td>
-                <td>Project Management</td>
-                <td>Laravel</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">SQL</td>
-                <td>Leadership</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">MongoDB</td>
-                <td>Analytical Skills</td>
-              </tr>
-              <tr className="">
-                <td className="p-[.3rem]">React.JS</td>
-                <td>Web design</td>
-              </tr>
+            <table className=" w-[90%] p-[10px] ml-[50px] text-gray-light h-[70%]">
+              <tbody>
+                <tr className="p-[1rem]">
+                  <td className="p-[.3rem]">Javascript</td>
+                  <td className="p-[.3rem]">SASS</td>
+                  <td className="p-[.3rem]">Slack</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">HTML</td>
+                  <td className="p-[.3rem]">Django</td>
+                  <td className="p-[.3rem]">Robotics</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">CSS</td>
+                  <td className="p-[.3rem]">Strategic planning</td>
+                  <td className="p-[.3rem]">Micropython</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">Python</td>
+                  <td>Resource management</td>
+                  <td>Chess</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">CSS</td>
+                  <td>Strategic planning</td>
+                  <td>Micropython</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">CSS</td>
+                  <td>PHP</td>
+                  <td>Web design</td>
+                </tr>
+                <tr className="">
+                  <td>Next.JS</td>
+                  <td>Project Management</td>
+                  <td>Laravel</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">SQL</td>
+                  <td>Leadership</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">MongoDB</td>
+                  <td>Analytical Skills</td>
+                </tr>
+                <tr className="">
+                  <td className="p-[.3rem]">React.JS</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className="relative left-[100px] w-[660px] h-[480px] flex justify-end items-end ">
