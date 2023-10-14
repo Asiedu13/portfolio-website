@@ -88,7 +88,8 @@ const HomePage = () => {
         {/* Output */}
         <section>
           <div className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1200px] mx-auto">
-            {ProjectsData.map((project) => (
+            {ProjectsData.map( ( project ) => (
+              <div key={project.id}>
               <ProjectCard
                 key={project.id}
                 name={project.name}
@@ -98,6 +99,7 @@ const HomePage = () => {
                 codeLink={project.codeLink}
                 tags={project.tags}
               />
+            </div>
             ))}
           </div>
           <div className="flex justify-center">
