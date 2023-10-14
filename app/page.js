@@ -1,4 +1,6 @@
 import React from 'react'
+import HomeHeader from "./component/Header/Home";
+import profilePic from "../public/media/imgs/profile_img.jpeg";
 
 const HomePage = () => {
   return (
