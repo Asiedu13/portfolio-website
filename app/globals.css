@@ -110,7 +110,7 @@ body {
   padding: 0.6rem;
   outline: none;
   border: none;
-  border-radius: 3px;
+  border-radius: 15px;
   background:#e5b970;
   color: black;
   font-weight: bold;
@@ -122,4 +122,8 @@ body {
 .card .info button:hover {
   background: dodgerblue;
   color: white;
+}
+
+.card:hover:before {
+     border: 6px solid #e5b970;
 }
