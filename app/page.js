@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import HomeHeader from "./component/Header/Home";
-import profilePic from "../public/media/imgs/profile_img.jpeg";
+import ProjectCard from "./component/Card/ProjectCard";
+import ProfileCard from "./component/Card/ProfileCard";
 
 const HomePage = () => {
   return (
@@ -65,17 +66,7 @@ const HomePage = () => {
             </table>
           </div>
           <div className="relative left-[100px] w-[660px] h-[480px] flex justify-end items-end ">
-            <Image
-              src={profilePic}
-              alt="Picture of the author"
-              className="absolute"
-              style={{
-                width: "450px",
-                height: "400px",
-                border: "15px solid #dadeda",
-                borderRadius: "20px",
-              }}
-            />
+            <ProfileCard />
           </div>
         </article>
       </section>
