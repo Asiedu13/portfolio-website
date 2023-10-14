@@ -58,27 +58,60 @@ const HomePage = () => {
                 <td className="p-[.3rem]">MongoDB</td>
                 <td>Analytical Skills</td>
               </tr>
-               <tr className="">
+              <tr className="">
                 <td className="p-[.3rem]">React.JS</td>
                 <td>Web design</td>
               </tr>
             </table>
           </div>
-          <div className="relative left-[50px] w-[650px] h-[480px] flex justify-end items-end ">
+          <div className="relative left-[100px] w-[660px] h-[480px] flex justify-end items-end ">
             <Image
               src={profilePic}
               alt="Picture of the author"
               className="absolute"
-              // width={40    height={800}
               style={{
-                width: "400px",
+                width: "450px",
                 height: "400px",
                 border: "15px solid #dadeda",
-                borderRadius: '20px',
+                borderRadius: "20px",
               }}
             />
           </div>
         </article>
+      </section>
+
+      {/* Projects Section */}
+      <section>
+        <header className="border-2 flex justify-center  ">
+          <h2 className="text-5xl ">Projects</h2>
+        </header>
+        <div className="border-2 p-[20px] flex justify-center">
+          <button>ALL</button>&nbsp; / &nbsp;
+          <button>WEB DEVELOPMENT</button> &nbsp;/&nbsp;
+          <button>APPLICATION</button> &nbsp;/&nbsp;
+          <button>DEVELOPMENT</button>&nbsp;
+        </div>
+
+        {/* Output */}
+        <section className="grid grid-rows-2 grid-flow-col gap-4 px-[100px] h-[600px] w-[1200px] border-cyan border-2 mx-auto">
+          <article className="w-[280px] h-[260px] border-2 border-cyan bg-header-background hover:border-4 hover:border-[#efb970] transition-all bg-contain ">
+            <h2>Project 1</h2>
+          </article>
+
+          <article className="w-[280px] h-[260px] border-2 border-cyan ">
+            <h2>Project 1</h2>
+          </article>
+
+          <article className="w-[280px] h-[260px] border-2 border-cyan ">
+            <h2>Project 1</h2>
+          </article>
+          <article className="w-[280px] h-[260px] border-2 border-cyan ">
+            <h2>Project 1</h2>
+          </article>
+          <article className="w-[280px] h-[260px] border-2 border-cyan ">
+            <h2>Project 1</h2>
+          </article>
+        </section>
       </section>
     </div>
   );
