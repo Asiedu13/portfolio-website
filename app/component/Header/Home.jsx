@@ -10,7 +10,7 @@ const HomeHeader = () => {
       <div className="bg-gradient-to-r from-[#2d2d2d] to-[#0000000e] text-[white] px-[100px] py-[50px]  h-[630px]">
         <section className="my-[20px] w-[430px]">
           <h1 className="text-6xl font-bold text-white">
-            I Code, build and maintain products
+            I code, build and maintain products
           </h1>
         </section>
         <section>
