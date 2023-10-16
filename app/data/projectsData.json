@@ -58,5 +58,16 @@
     "codeLink": "",
     "type": "FRONTEND",
     "tags": ["api", "webdev"]
+  },
+  {
+    "id": 7,
+    "img": "/media/imgs/glasses.jpg",
+    "name": "CBGC",
+    "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
+    "liveLink": "",
+    "codeLink": "",
+    "type": "BACKEND",
+    "tags": ["api", "webdev"]
   }
+  
 ]
