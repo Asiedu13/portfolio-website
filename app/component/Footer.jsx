@@ -30,8 +30,12 @@ const Footer = () => {
         {/* social media */}
         <div className="flex justify-center items-center mt-[10px]">
           <div className="flex justify-evenly items-center w-[900px] ">
-            <Github />
-            <LinkedIn />
+            <Link href="https://github.com/Asiedu13">
+              <Github />
+            </Link>
+            <Link href="https://www.linkedin.com/in/princek-asiedu/">
+              <LinkedIn />
+            </Link>
             <Whatsapp />
             <Telegram />
             <Facebook />
