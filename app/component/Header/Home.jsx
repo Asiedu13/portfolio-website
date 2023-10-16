@@ -1,5 +1,5 @@
-import React from 'react'
-import Nav from '../Nav/Nav';
+import React from "react";
+import Nav from "../Nav/Nav";
 
 const HomeHeader = () => {
   return (
@@ -32,6 +32,6 @@ const HomeHeader = () => {
       </div>
     </header>
   );
-}
+};
 
-export default HomeHeader
+export default HomeHeader;
