@@ -28,8 +28,8 @@ const Footer = () => {
           </div>
         </div>
         {/* social media */}
-        <div className="flex justify-center items-center mt-[10px]">
-          <div className="flex justify-evenly items-center w-[900px] ">
+        <div className="flex flex-col justify-center items-center mt-[10px] md:flex-row">
+          <div className="flex justify-evenly items-center min-w-[400px] md:w-[900px] shrink md:shrink-0 ">
             <Link href="https://github.com/Asiedu13">
               <Github />
             </Link>
@@ -44,9 +44,9 @@ const Footer = () => {
         </div>
       </div>
       {/*  other details and links*/}
-      <section className=" mt-[50px] py-[30px] px-[60px] flex justify-between h-[300px]">
+      <section className="mt-[50px] py-[30px] px-[60px] flex flex-col justify-between h-[300px] md:flex-row">
         {/* Logo like thingy */}
-        <div className="px-[20px]">
+        <div className="md:px-[20px]">
           <b className="text-3xl">Prince.k</b>
           <p className="text-gray">Web developer</p>
         </div>
