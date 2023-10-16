@@ -111,29 +111,33 @@ const HomePage = () => {
 
         {/* Output */}
         <section>
-          <div className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1250px] mx-auto overflow-hidden">
-            {projects.map((project) => (
-              <div key={project.id}>
-                <ProjectCard
-                  keyValue={project.id}
-                  name={project.name}
-                  img={project.img}
-                  desc={project.desc}
-                  liveLink={project.liveLink}
-                  codeLink={project.codeLink}
-                  tags={project.tags}
-                />
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-8 h-5/6 w-4/5 mx-auto h-[800px] w-[1250px] mx-auto overflow-hidden">
+            {projects ? (
+              projects.map((project) => (
+                <div key={project.id}>
+                  <ProjectCard
+                    keyValue={project.id}
+                    name={project.name}
+                    img={project.img}
+                    desc={project.desc}
+                    liveLink={project.liveLink}
+                    codeLink={project.codeLink}
+                    tags={project.tags}
+                  />
+                </div>
+              ))
+            ) : (
+              <p>No projects found</p>
+            )}
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-[20px]">
             <YellowButton content={"View More"} />
           </div>
         </section>
       </section>
 
       {/* Hire me banner */}
-      <section className="flex justify-between py-[1rem] px-[5rem] h-[200px] items-center bg-yellow mt-[100px] ">
+      <section className="flex flex-col justify-between py-[1rem] px-[5rem] h-[200px] items-center bg-yellow mt-[100px] md:flex-row ">
         <div>
           <h3 className="text-2xl text-gray-dark mb-[25px]">
             Want to work with me?
@@ -142,7 +146,7 @@ const HomePage = () => {
             Always feel free to contact & hire me
           </p>
         </div>
-        <div className="pr-[100px]">
+        <div className="md:pr-[100px]">
           <button className="w-[220px] h-[80px] bg-gray-dark text-yellow rounded-md">
             Hire me
           </button>
