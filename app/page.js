@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import HomeHeader from "./component/Header/Home";
 import ProjectCard from "./component/Card/ProjectCard";
 import ProfileCard from "./component/Card/ProfileCard";
@@ -6,6 +8,20 @@ import YellowButton from "./component/Button/YellowButton";
 import Footer from "./component/Footer";
 
 const HomePage = () => {
+  const [projects, setProjects] = useState([...ProjectsData]);
+
+  function filterProjects(filter) {
+    if (filter !== "ALL") {
+      const filteredProjects = ProjectsData.filter((project) =>
+        project.type.includes(filter)
+      );
+      setProjects(filteredProjects);
+    }
+    else {
+      setProjects( ProjectsData );
+    }
+  }
+
   return (
     <div>
       <HomeHeader />
@@ -79,27 +95,35 @@ const HomePage = () => {
           <h2 className="text-5xl ">Projects</h2>
         </header>
         <div className=" p-[20px] flex justify-center">
-          <button>ALL</button>&nbsp; / &nbsp;
-          <button>FRONTEND </button> &nbsp;/&nbsp;
-          <button>BACKEND </button> &nbsp;/&nbsp;
-          <button>FULLSTACK</button>&nbsp;
+          <button onClick={() => filterProjects("ALL")}>ALL</button>&nbsp; /
+          &nbsp;
+          <button onClick={() => filterProjects("FRONTEND")}>
+            FRONTEND{" "}
+          </button>{" "}
+          &nbsp;/&nbsp;
+          <button onClick={() => filterProjects("BACKEND")}>
+            BACKEND{" "}
+          </button>{" "}
+          &nbsp;/&nbsp;
+          <button onClick={() => filterProjects("FULLSTACK")}>FULLSTACK</button>
+          &nbsp;
         </div>
 
         {/* Output */}
         <section>
-          <div className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1200px] mx-auto">
-            {ProjectsData.map( ( project ) => (
+          <div className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1250px] mx-auto overflow-hidden">
+            {projects.map((project) => (
               <div key={project.id}>
-              <ProjectCard
-                key={project.id}
-                name={project.name}
-                img={project.img}
-                desc={project.desc}
-                liveLink={project.liveLink}
-                codeLink={project.codeLink}
-                tags={project.tags}
-              />
-            </div>
+                <ProjectCard
+                  keyValue={project.id}
+                  name={project.name}
+                  img={project.img}
+                  desc={project.desc}
+                  liveLink={project.liveLink}
+                  codeLink={project.codeLink}
+                  tags={project.tags}
+                />
+              </div>
             ))}
           </div>
           <div className="flex justify-center">
@@ -125,9 +149,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* Testimonials section */}
-      <section className="h-[400px]">
-
-      </section>
+      <section className="h-[400px]"></section>
 
       <Footer />
     </div>
