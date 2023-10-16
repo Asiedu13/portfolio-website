@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import HomeHeader from "./component/Header/Home";
 import ProjectCard from "./component/Card/ProjectCard";
 import ProfileCard from "./component/Card/ProfileCard";
@@ -6,17 +8,31 @@ import YellowButton from "./component/Button/YellowButton";
 import Footer from "./component/Footer";
 
 const HomePage = () => {
+  const [projects, setProjects] = useState([...ProjectsData]);
+
+  function filterProjects(filter) {
+    if (filter !== "ALL") {
+      const filteredProjects = ProjectsData.filter((project) =>
+        project.type.includes(filter)
+      );
+      setProjects(filteredProjects);
+    }
+    else {
+      setProjects( ProjectsData );
+    }
+  }
+
   return (
-    <div>
+    <div className="w-[100vw]">
       <HomeHeader />
       {/* Skills display */}
-      <section className="flex">
-        <article className=" mx-[auto] bg-[#2d2d2d] w-[1100px] w-max-[1400px] h-[450px] absolute rounded-3xl relative bottom-[100px] border-gray-light border-4 flex">
-          <div className="w-[80%] h-[inherit]">
-            <header className="p-[2rem] pl-[12.5rem]">
+      <section className="w-[100%] h-[580px] flex items-center md:flex-row md:w-[inherit]">
+        <article className=" mx-[auto] bg-[#2d2d2d] w-[inherit] h-[490px] flex flex-col-reverse md:w-[1100px] md:w-max-[1400px] md:h-[450px] rounded-3xl relative md:bottom-[100px] border-gray-light border-4 md:flex md:flex-row">
+          <div className="w-[90%] md:w-[90%] h-[inherit]">
+            <header className="p-[1rem] md:p-[2rem] md:pl-[12.5rem]">
               <h2 className="text-3xl text-white">Skills</h2>
             </header>
-            <table className=" w-[90%] p-[10px] ml-[50px] text-gray-light h-[70%]">
+            <table className="w-[90%] relative p-[10px] ml-[20px] md:ml-[50px] text-gray-light h-[70%] md:top-[0px]">
               <tbody>
                 <tr className="p-[1rem]">
                   <td className="p-[.3rem]">Javascript</td>
@@ -56,18 +72,18 @@ const HomePage = () => {
                 <tr className="">
                   <td className="p-[.3rem]">SQL</td>
                   <td>Leadership</td>
+                  <td className="p-[.3rem]">React.JS</td>
                 </tr>
                 <tr className="">
                   <td className="p-[.3rem]">MongoDB</td>
                   <td>Analytical Skills</td>
                 </tr>
-                <tr className="">
-                  <td className="p-[.3rem]">React.JS</td>
-                </tr>
+                <tr className=""></tr>
+                <tr className=""></tr>
               </tbody>
             </table>
           </div>
-          <div className="relative left-[100px] w-[660px] h-[480px] flex justify-end items-end ">
+          <div className="relative md:top-[0px] md:left-[100px] md:w-[660px] h-[480px] flex justify-end items-end ">
             <ProfileCard />
           </div>
         </article>
@@ -79,37 +95,49 @@ const HomePage = () => {
           <h2 className="text-5xl ">Projects</h2>
         </header>
         <div className=" p-[20px] flex justify-center">
-          <button>ALL</button>&nbsp; / &nbsp;
-          <button>FRONTEND </button> &nbsp;/&nbsp;
-          <button>BACKEND </button> &nbsp;/&nbsp;
-          <button>FULLSTACK</button>&nbsp;
+          <button onClick={() => filterProjects("ALL")}>ALL</button>&nbsp; /
+          &nbsp;
+          <button onClick={() => filterProjects("FRONTEND")}>
+            FRONTEND{" "}
+          </button>{" "}
+          &nbsp;/&nbsp;
+          <button onClick={() => filterProjects("BACKEND")}>
+            BACKEND{" "}
+          </button>{" "}
+          &nbsp;/&nbsp;
+          <button onClick={() => filterProjects("FULLSTACK")}>FULLSTACK</button>
+          &nbsp;
         </div>
 
         {/* Output */}
         <section>
-          <div className="grid grid-rows-2 grid-flow-col gap-8 h-[800px] w-[1200px] mx-auto">
-            {ProjectsData.map( ( project ) => (
-              <div key={project.id}>
-              <ProjectCard
-                key={project.id}
-                name={project.name}
-                img={project.img}
-                desc={project.desc}
-                liveLink={project.liveLink}
-                codeLink={project.codeLink}
-                tags={project.tags}
-              />
-            </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-8 h-5/6 w-4/5 mx-auto h-[800px] w-[1250px] mx-auto overflow-hidden">
+            {projects ? (
+              projects.map((project) => (
+                <div key={project.id}>
+                  <ProjectCard
+                    keyValue={project.id}
+                    name={project.name}
+                    img={project.img}
+                    desc={project.desc}
+                    liveLink={project.liveLink}
+                    codeLink={project.codeLink}
+                    tags={project.tags}
+                  />
+                </div>
+              ))
+            ) : (
+              <p>No projects found</p>
+            )}
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-[20px]">
             <YellowButton content={"View More"} />
           </div>
         </section>
       </section>
 
       {/* Hire me banner */}
-      <section className="flex justify-between py-[1rem] px-[5rem] h-[200px] items-center bg-yellow mt-[100px] ">
+      <section className="flex flex-col justify-between py-[1rem] px-[5rem] h-[200px] items-center bg-yellow mt-[100px] md:flex-row ">
         <div>
           <h3 className="text-2xl text-gray-dark mb-[25px]">
             Want to work with me?
@@ -118,16 +146,14 @@ const HomePage = () => {
             Always feel free to contact & hire me
           </p>
         </div>
-        <div className="pr-[100px]">
+        <div className="md:pr-[100px]">
           <button className="w-[220px] h-[80px] bg-gray-dark text-yellow rounded-md">
             Hire me
           </button>
         </div>
       </section>
       {/* Testimonials section */}
-      <section className="h-[400px]">
-
-      </section>
+      <section className="h-[400px]"></section>
 
       <Footer />
     </div>
