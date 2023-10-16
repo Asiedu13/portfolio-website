@@ -23,7 +23,7 @@ const HomePage = () => {
   }
 
   return (
-    <div>
+    <div className="w-[100vw]">
       <HomeHeader />
       {/* Skills display */}
       <section className="flex">
