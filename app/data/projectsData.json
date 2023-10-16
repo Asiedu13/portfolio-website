@@ -46,7 +46,7 @@
     "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
     "liveLink": "",
     "codeLink": "",
-    "type": "FRONTEND",
+    "type": "BACKEND",
     "tags": ["api", "webdev"]
   },
   {
@@ -56,7 +56,8 @@
     "desc": "Lorem Ipsum is simply dummy text from the printing and typeseting industry",
     "liveLink": "",
     "codeLink": "",
-    "type": "FRONTEND",
+    "type": "BACKEND",
     "tags": ["api", "webdev"]
   }
+  
 ]
