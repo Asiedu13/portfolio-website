@@ -72,18 +72,18 @@ const HomePage = () => {
                 <tr className="">
                   <td className="p-[.3rem]">SQL</td>
                   <td>Leadership</td>
+                  <td className="p-[.3rem]">React.JS</td>
                 </tr>
                 <tr className="">
                   <td className="p-[.3rem]">MongoDB</td>
                   <td>Analytical Skills</td>
                 </tr>
-                <tr className="">
-                  <td className="p-[.3rem]">React.JS</td>
-                </tr>
+                <tr className=""></tr>
+                <tr className=""></tr>
               </tbody>
             </table>
           </div>
-          <div className="relative left-[100px] w-[660px] h-[480px] flex justify-end items-end ">
+          <div className="relative md:top-[0px] md:left-[100px] md:w-[660px] h-[480px] flex justify-end items-end ">
             <ProfileCard />
           </div>
         </article>
