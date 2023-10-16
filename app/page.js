@@ -26,13 +26,13 @@ const HomePage = () => {
     <div className="w-[100vw]">
       <HomeHeader />
       {/* Skills display */}
-      <section className="flex">
-        <article className=" mx-[auto] bg-[#2d2d2d] w-[1100px] w-max-[1400px] h-[450px] absolute rounded-3xl relative bottom-[100px] border-gray-light border-4 flex">
-          <div className="w-[80%] h-[inherit]">
-            <header className="p-[2rem] pl-[12.5rem]">
+      <section className="w-[100%] h-[580px] flex items-center md:flex-row md:w-[inherit]">
+        <article className=" mx-[auto] bg-[#2d2d2d] w-[inherit] h-[490px] flex flex-col-reverse md:w-[1100px] md:w-max-[1400px] md:h-[450px] rounded-3xl relative md:bottom-[100px] border-gray-light border-4 md:flex md:flex-row">
+          <div className="w-[90%] md:w-[90%] h-[inherit]">
+            <header className="p-[1rem] md:p-[2rem] md:pl-[12.5rem]">
               <h2 className="text-3xl text-white">Skills</h2>
             </header>
-            <table className=" w-[90%] p-[10px] ml-[50px] text-gray-light h-[70%]">
+            <table className="w-[90%] relative p-[10px] ml-[20px] md:ml-[50px] text-gray-light h-[70%] md:top-[0px]">
               <tbody>
                 <tr className="p-[1rem]">
                   <td className="p-[.3rem]">Javascript</td>
