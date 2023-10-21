@@ -26,7 +26,7 @@ const HomePage = () => {
     <div className="w-[100vw]">
       <HomeHeader />
       {/* Skills display */}
-      <section className="w-[100%] h-[600px] mb-[15rem] flex items-start md:flex-row md:w-[inherit] md:m-[0px]">
+      <section className="w-[100%] h-[600px] mb-[15rem] flex items-start relative bottom-[100px] md:flex-row md:w-[inherit] md:m-[0px]">
         <article className="mx-[auto] bg-[#2d2d2d] py-[1rem] w-[inherit] flex flex-col md:w-[1100px] md:w-max-[1400px] md:h-[450px] rounded-3xl relative md:bottom-[100px] border-gray-light border-4 md:flex md:flex-row-reverse">
           <div className="relative h-[350px] flex justify-end items-start md:top-[0px] md:w-[660px] md:h-[480px] md:items-end">
             <ProfileCard />
@@ -90,7 +90,7 @@ const HomePage = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="mt-[10rem] md:mt-[0px]">
+      <section className=" md:mt-[0px]">
         <header className="flex justify-center">
           <h2 className="text-5xl ">Projects</h2>
         </header>
@@ -110,8 +110,8 @@ const HomePage = () => {
         </div>
 
         {/* Output */}
-        <section className="w-[450px] md:w-[100%] flex items-center justify-center flex-col">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:grid-rows-2 gap-8 h-5/6 w-4/5  md:w-[1250px] overflow-hidden">
+        <section className="w-[95%] md:w-[100%] flex items-center justify-center flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:grid-rows-2 gap-8 h-5/6 w-4/5 md:w-[1250px] overflow-hidden">
             {projects ? (
               projects.map((project) => (
                 <div key={project.id}>
