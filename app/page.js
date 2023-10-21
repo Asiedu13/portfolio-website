@@ -26,13 +26,16 @@ const HomePage = () => {
     <div className="w-[100vw]">
       <HomeHeader />
       {/* Skills display */}
-      <section className="w-[100%] h-[580px] flex items-center md:flex-row md:w-[inherit]">
-        <article className=" mx-[auto] bg-[#2d2d2d] w-[inherit] h-[490px] flex flex-col-reverse md:w-[1100px] md:w-max-[1400px] md:h-[450px] rounded-3xl relative md:bottom-[100px] border-gray-light border-4 md:flex md:flex-row">
+      <section className="w-[100%] h-[600px] mb-[180px] flex items-start md:flex-row md:w-[inherit] md:m-[0px]">
+        <article className="mx-[auto] bg-[#2d2d2d] py-[1rem] w-[inherit] flex flex-col md:w-[1100px] md:w-max-[1400px] md:h-[450px] rounded-3xl relative md:bottom-[100px] border-gray-light border-4 md:flex md:flex-row-reverse">
+          <div className="relative h-[350px] flex justify-end items-start md:top-[0px] md:w-[660px] md:h-[480px] md:items-end">
+            <ProfileCard />
+          </div>
           <div className="w-[90%] md:w-[90%] h-[inherit]">
             <header className="p-[1rem] md:p-[2rem] md:pl-[12.5rem]">
               <h2 className="text-3xl text-white">Skills</h2>
             </header>
-            <table className="w-[90%] relative p-[10px] ml-[20px] md:ml-[50px] text-gray-light h-[70%] md:top-[0px]">
+            <table className="w-[100%] relative px-[50px] ml-[20px] md:ml-[50px] text-gray-light h-[70%] md:top-[0px]">
               <tbody>
                 <tr className="p-[1rem]">
                   <td className="p-[.3rem]">Javascript</td>
@@ -82,9 +85,6 @@ const HomePage = () => {
                 <tr className=""></tr>
               </tbody>
             </table>
-          </div>
-          <div className="relative md:top-[0px] md:left-[100px] md:w-[660px] h-[480px] flex justify-end items-end ">
-            <ProfileCard />
           </div>
         </article>
       </section>
@@ -137,17 +137,17 @@ const HomePage = () => {
       </section>
 
       {/* Hire me banner */}
-      <section className="flex flex-col justify-between py-[1rem] px-[5rem] h-[200px] items-center bg-yellow mt-[100px] md:flex-row ">
+      <section className="flex flex-col justify-between py-[4rem] px-[5rem] h-fit items-center bg-yellow mt-[100px] md:flex-row ">
         <div>
-          <h3 className="text-2xl text-gray-dark mb-[25px]">
+          <h3 className="text-2xl text-gray-dark mb-[2px]">
             Want to work with me?
           </h3>
-          <p className="font-normal text-gray-dark text-sm">
+          <p className="font-normal pb-[20px] text-gray-dark text-sm md:py-[0px]">
             Always feel free to contact & hire me
           </p>
         </div>
         <div className="md:pr-[100px]">
-          <button className="w-[220px] h-[80px] bg-gray-dark text-yellow rounded-md">
+          <button className="w-[220px] h-[60px] md:w-[220px] md:h-[80px] bg-gray-dark text-yellow rounded-md">
             Hire me
           </button>
         </div>
