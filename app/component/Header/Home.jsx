@@ -7,9 +7,9 @@ const HomeHeader = () => {
       <Nav />
 
       {/* Header headline */}
-      <div className="bg-gradient-to-r from-[#2d2d2d] to-[#0000000e] text-[white] px-[50px] sm:px-[50px] py-[10px] w-[100%] h-[630px] flex flex-col justify-center md:px-[100px]">
+      <div className="bg-gradient-to-r from-[#2d2d2d] to-[#0000000e] text-[white] px-[20px] sm:px-[50px] py-[10px] w-[100%] h-[630px] flex flex-col justify-center md:px-[100px]">
         <section className="my-[20px] w-[430px]">
-          <h1 className="text-5xl md:text-6xl font-bold text-white">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
             I code, build and maintain products
           </h1>
         </section>

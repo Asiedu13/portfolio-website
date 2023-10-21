@@ -12,7 +12,7 @@ const Nav = () => {
         </p>
       </div>
       {/* Navigation itself */}
-      <div className="group/item w-[200px] h-[fit-content] right-[0px] flex flex-col absolute md:flex-row md:relative justify-between md:w-[900px] md:h-[80px] md:bg-[transparent]">
+      <div className="group/item w-[200px] h-[fit-content] right-[0px] flex flex-col absolute md:flex-row md:relative justify-between md:w-[900px] md:h-[80px] md:bg-[transparent]  my-[10px]">
         <button className="group/item h-[60px] md:hidden bg-[#2d2d2d] rounded-xl ">
           Menu
         </button>
