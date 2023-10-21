@@ -12,7 +12,7 @@ const Nav = () => {
         </p>
       </div>
       {/* Navigation itself */}
-      <div className="group/item w-[200px] h-[fit-content] right-[10px] bg-[#2d2d2d] flex flex-col absolute md:flex-row md:relative justify-between md:w-[900px] md:h-[80px] md:bg-[transparent] ">
+      <div className="group/item w-[200px] h-[fit-content] right-[0px] bg-[#2d2d2d] flex flex-col absolute md:flex-row md:relative justify-between md:w-[900px] md:h-[80px] md:bg-[transparent] ">
         <button className="group/item h-[60px] md:hidden">Menu</button>
         <ul className="flex flex-col h-[000px] w-[200px] invisible group-hover/item:visible group-hover/item:h-[inherit] md:flex md:flex-row md:w-[600px] md:items-center md:justify-around md:h-[80px] md:visible">
           <Link href="/">
