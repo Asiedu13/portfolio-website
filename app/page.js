@@ -111,7 +111,7 @@ const HomePage = () => {
 
         {/* Output */}
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-8 h-5/6 w-4/5 mx-auto h-[800px] w-[1250px] mx-auto overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-8 h-5/6 w-4/5 mx-auto h-fit md:w-[1250px] mx-auto overflow-hidden">
             {projects ? (
               projects.map((project) => (
                 <div key={project.id}>
