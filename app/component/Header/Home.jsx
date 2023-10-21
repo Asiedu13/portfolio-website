@@ -21,7 +21,7 @@ const HomeHeader = () => {
             {"contact me. Let's bring your projects to life. "}
           </p>
         </section>
-        <section className="py-[20px]">
+        <section className="py-[20px] w-[400px] flex">
           <button className="bg-[#e5b970] text-[#2d2d2d] p-[15px] rounded-full w-[170px] text-sm mr-[15px] transition-all hover:bg-[#ffbe56]">
             Contact me
           </button>
