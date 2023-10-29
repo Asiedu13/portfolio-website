@@ -40,9 +40,13 @@ const Nav = () => {
         </ul>
         {/* Download CV button */}
         <div className="items-center px-[30px] h-[0px] flex justify-center invisible group-hover/item:visible group-hover/item:h-[inherit] py-[.2rem] md:visible md:h-[inherit] md:py-[0] bg-[#2d2d2d] rounded-b-xl md:bg-[transparent]">
-          <button className="bg-[#fc9701] rounded-md p-[10px] text-sm text-[#000]  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#ffa216] duration-300 ">
+          <a
+            target='_blank'
+            href="https://flowcv.com/resume/3jvpke4mst"
+            className="bg-[#fc9701] rounded-md p-[10px] text-sm text-[#000]  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#ffa216] duration-300 "
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </nav>

@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
+
 const ProjectCard = ({name, desc, liveLink, codeLink, img, tags, keyValue}) => {
   return (
     <div className="wrapper w-[inherit]" key={keyValue}>
@@ -9,12 +11,12 @@ const ProjectCard = ({name, desc, liveLink, codeLink, img, tags, keyValue}) => {
         <div className="info">
           <h1>{name}</h1>
           <p>{desc}</p>
-          <Link href={liveLink}>
+          <a target="_blank" href={liveLink}>
             <button>Live site</button>
-          </Link>
-          <Link href={codeLink}>
+          </a>
+          <a target="_blank" href={codeLink}>
             <button>View code</button>
-          </Link>
+          </a>
           <div className="mt-[10px]">{tags ? tags.map((tag, index) => <span key={index}>#{tag}</span>) : " "}</div>
         </div>
       </div>

@@ -1,11 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import HomeHeader from "./component/Header/Home";
-import ProjectCard from "./component/Card/ProjectCard";
+// import ProjectCard from "./component/Card/ProjectCard";
 import ProfileCard from "./component/Card/ProfileCard";
 import ProjectsData from "./data/projectsData.json";
 import YellowButton from "./component/Button/YellowButton";
 import Footer from "./component/Footer";
+
+import dynamic from "next/dynamic";
+
+// Client Components:
+const ProjectCard = dynamic(() => import("./component/Card/ProjectCard"));
 
 const HomePage = () => {
   const [projects, setProjects] = useState([...ProjectsData]);
