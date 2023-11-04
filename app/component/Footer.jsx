@@ -15,18 +15,7 @@ const Footer = () => {
         <div className="flex justify-center items-center">
           <h2 className="text-4xl text-white">Get in Touch</h2>
         </div>
-        <div className="flex justify-center items-center p-[1rem]">
-          <div className="border-2 border-gray w-[900px] h-[75px] rounded-xl flex items-center ">
-            <input
-              className="bg-transparent text-gray-light w-[77%] h-[inherit] p-[1rem] outline-none border-none"
-              type="text"
-              placeholder="@email message goes here"
-            />
-            <button className="bg-yellow h-[90%] w-[200px] rounded-xl">
-              Submit
-            </button>
-          </div>
-        </div>
+      
         {/* social media */}
         <div className="flex flex-col justify-center items-center mt-[10px] md:flex-row">
           <div className="flex justify-evenly items-center min-w-[400px] md:w-[900px] shrink md:shrink-0 ">
