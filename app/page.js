@@ -1,13 +1,15 @@
 "use client";
-import { useState, useEffect } from "react";
-import HomeHeader from "./component/Header/Home";
-// import ProjectCard from "./component/Card/ProjectCard";
-import ProfileCard from "./component/Card/ProfileCard";
-import ProjectsData from "./data/projectsData.json";
-import YellowButton from "./component/Button/YellowButton";
-import Footer from "./component/Footer";
+import { useState } from "react";
 
 import dynamic from "next/dynamic";
+// import ProjectCard from "./component/Card/ProjectCard";
+import HomeHeader from "./component/Header/Home";
+import ProfileCard from "./component/Card/ProfileCard";
+import YellowButton from "./component/Button/YellowButton";
+import MailIllustration from "./component/svgs/MailIllustration";
+import Footer from "./component/Footer";
+
+import ProjectsData from "./data/projectsData.json";
 
 // Client Components:
 const ProjectCard = dynamic(() => import("./component/Card/ProjectCard"));
@@ -21,14 +23,13 @@ const HomePage = () => {
         project.type.includes(filter)
       );
       setProjects(filteredProjects);
-    }
-    else {
-      setProjects( ProjectsData );
+    } else {
+      setProjects(ProjectsData);
     }
   }
 
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100vw] bg-white">
       <HomeHeader />
       {/* Skills display */}
       <section className="w-[100%] h-[600px] mb-[15rem] flex items-start relative bottom-[100px] md:bottom-[0px] md:flex-row md:w-[inherit] md:m-[0px]">
@@ -157,8 +158,86 @@ const HomePage = () => {
           </button>
         </div>
       </section>
-      {/* Testimonials section */}
-      <section className="h-[400px]"></section>
+
+      {/* Contact me section */}
+      <div className="flex flex-col justify-center items-center py-7 bg-white ">
+        <p className=" my-5 text-slate-400 ">Available for projects</p>
+        <h2 className="text-2xl md:text-3xl px-8">
+          Have a tech enabled business idea? Get in touch
+        </h2>
+      </div>
+      <section className="flex h-[600px] md:h-[500px] justify-center bg-white">
+        <div className="hidden md:flex">
+          <MailIllustration />
+        </div>
+        {/* Main form */}
+        <section className="w-[700px] mb-[2rem] bg-white border-2 border-slate-100 rounded-lg z-10 ">
+          <form action="" className="p-6 h-[100%] ">
+            <div className="flex flex-col md:flex-row mb-[20px]">
+              <div className="flex-1 flex flex-col md:justify-between">
+                <label htmlFor="clientName" className="mb-[10px]">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="clientName"
+                  placeholder="Your name here"
+                  className="border-2 border-slate-200 rounded-md p-2 w-[300px] placeholder-slate-400"
+                />
+                {/* Error message */}
+                <p></p>
+              </div>
+              <div className="flex-1 flex flex-col md:pl-[30px]">
+                <label htmlFor="clientEmail" className="mb-[10px]">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  id="clientEmail"
+                  placeholder="E.g myemail@email.com"
+                  className="border-2 border-slate-200 rounded-md p-2 placeholder-slate-400 "
+                />
+                {/* Error message */}
+                <p></p>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <label htmlFor="projectType" className="mb-[10px]">
+                What type of project are you looking for?
+              </label>
+              <select
+                name="projectType"
+                id="projectType"
+                className="flex-1 p-2 border-2 border-slate-200 rounded-md"
+              >
+                <option value="null">Select an option</option>
+                <option value="null">Website Design and Development</option>
+                <option value="null">Web App Design and Development</option>
+                <option value="null">Custom Software</option>
+                <option value="null">Other</option>
+              </select>
+              <p></p> {/* In case of error */}
+            </div>
+
+            <div className="flex flex-col my-[20px] ">
+              <label htmlFor="tellMeMore" className=" mb-[10px]">
+                Tell me more about this Project
+              </label>
+              <textarea
+                className="border-2 border-slate-200 rounded-md h-[100px] p-3 placeholder:text-slate-400"
+                placeholder="What do I need to know about this project"
+              />
+            </div>
+
+            <div>
+              <button className="bg-[#e5b970] p-4 rounded-md">
+                Send message
+              </button>
+            </div>
+          </form>
+        </section>
+      </section>
 
       <Footer />
     </div>
